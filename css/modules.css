@@ -104,3 +104,21 @@ label {
   background-color: darkgray;
   border-radius: 0;
 }
+
+#input {
+  padding: 2px;
+  width: 220px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.text-err {
+  color: red;
+  font-weight: lighter;
+}
