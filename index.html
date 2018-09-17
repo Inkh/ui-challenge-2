@@ -18,21 +18,34 @@
       <label for="input">Text</label>
       <input id="input" name="input" type="text" placeholder="Type in here...">
 
-      <label for="drop-down">Select</label>
-      <select name="drop-down" id="">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="4">Option 4</option>
-        <option value="5">Option 5</option>
-      </select>
+      <div class="sel">
+        <label for="drop-down">Select</label>
+        <select name="drop-down" class="sol">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+      </div>
 
       <label for="rad">Radio</label>
-      <input type="radio" name="rad">
-      <input type="radio" name="rad">
-
+      <div class="rad-group">
+        <input type="radio" name="rad" value="1">
+        <div class="radio"></div>
+      </div>
+      <div class="rad-group">
+        <input type="radio" name="rad" value="2">
+        <div class="radio"></div>
+      </div>
+      <div class="check-group">
+        <label for="check">Check</label>
+        <input type="checkbox">
+        <div class="check"></div>
+        <input type="checkbox">
+        <div class="check"></div>
+      </div>
       <input type="submit" value="Button">
-      <div class="radio"></div>
     </form>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
