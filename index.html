@@ -13,22 +13,29 @@
 </head>
 
 <body>
-  <form action="">
-    <label for="input">Text</label>
-    <input name="input" type="text" placeholder="Type in here...">
-    <label for="validate">More text</label>
-    <input name="validate" type="text" placeholder="You have to type at least two characters">
-    <label for="drop-down">Select</label>
-    <select name="drop-down" id="">
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-      <option value="4">Option 4</option>
-      <option value="5">Option 5</option>
-    </select>
-    <input type="radio" name="rad">
-    <input type="radio" name="rad">
-  </form>
+  <section class="wrapper">
+    <form action="">
+      <label for="input">Text</label>
+      <input id="input" name="input" type="text" placeholder="Type in here...">
+
+      <label for="drop-down">Select</label>
+      <select name="drop-down" id="">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+      </select>
+
+      <label for="rad">Radio</label>
+      <input type="radio" name="rad">
+      <input type="radio" name="rad">
+
+      <input type="submit" value="Button">
+      <div class="radio"></div>
+    </form>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
