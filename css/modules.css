@@ -16,13 +16,6 @@ label {
   margin-top: 30px;
 }
 
-/* select:nth-child(even) {
-  color: #f2f2f2
-} */
-/* option:nth-of-type(2n) {
-  color: red;
-} */
-
 .sel {
   position: relative;
   /* background: url('../assets/form-elements-sprite.png') no-repeat right #ddd; */
@@ -38,7 +31,6 @@ label {
 
 .rad-group > input {
   visibility: hidden;
-  /* display: none; */
   position: absolute;
 }
 
@@ -51,15 +43,21 @@ label {
   background-position: -223px;
 }
 
-.check-group input {
+.check-group {
+  display: inline-block;
+}
+
+.check-group > input {
   position: absolute;
-  opacity: 0;
+  visibility: hidden;
+}
+
+.check-group > input + div {
   cursor: pointer;
 }
 
-.check-group .check:after {
-  background: url('../assets/form-elements-sprite.png');
-  background-position: -160px;
+.check-group > input:checked + div {
+  background-position: -101px;
 }
 
 .radio {
@@ -94,4 +92,15 @@ label {
   height: 50px;
   width: 50px;
   background-size: 400px auto;
+}
+
+.submit {
+  display: block;
+  width: 100px;
+  height: 20px;
+}
+
+.submit:hover {
+  background-color: darkgray;
+  border-radius: 0;
 }
