@@ -1,0 +1,147 @@
+section.wrapper {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 20px;
+}
+
+input {
+  display: inline-block;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+}
+
+.sol {
+  background-color: #dddddd;
+  border-radius: 0;
+  -webkit-appearance: none;
+  /* background-image: url('../assets/form-elements-sprite.png'); */
+  /* background-position:right 50%; */
+  /* background-position: 100px 50%;
+  background-repeat:no-repeat;
+  background-size: cover; */
+  width: 200px;
+}
+
+.sol:hover {
+  cursor: pointer;
+}
+
+option {
+  background: aquamarine;
+}
+.sel {
+  position: relative;
+  /* background: url('../assets/form-elements-sprite.png') no-repeat right #ddd; */
+}
+
+option:nth-child(odd) {
+  background-color: gray;
+}
+
+.rad-group {
+  display: inline-block;
+}
+
+.rad-group > input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.rad-group > input + .radio {
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.rad-group > input:checked + .radio {
+  background-position: -223px;
+}
+
+.check-group {
+  display: inline-block;
+}
+
+.check-group > input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.check-group > input + div {
+  cursor: pointer;
+}
+
+.check-group > input:checked + div {
+  background-position: -101px;
+}
+
+.radio {
+  background: url('../assets/form-elements-sprite.png');
+  background-position: -160px;
+  height: 50px;
+  width: 50px;
+  background-size: 400px auto;
+  display: inline-block;
+}
+
+.radio-select {
+  background: url('../assets/form-elements-sprite.png');
+  background-position: -223px;
+  height: 50px;
+  width: 50px;
+  background-size: 400px auto;
+  display: inline-block;
+}
+
+.check {
+  background: url('../assets/form-elements-sprite.png');
+  background-position: -40px;
+  height: 50px;
+  width: 50px;
+  background-size: 400px auto;
+}
+
+.check-select {
+  background: url('../assets/form-elements-sprite.png');
+  background-position: -101px;
+  height: 50px;
+  width: 50px;
+  background-size: 400px auto;
+}
+
+.submit {
+  display: block;
+  width: 100px;
+  height: 20px;
+}
+
+.submit:hover {
+  background-color: darkgray;
+  border-radius: 0;
+}
+
+#input {
+  padding: 2px;
+  width: 220px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+#input:focus {
+  outline: none;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.text-err {
+  color: red;
+  font-weight: lighter;
+}
